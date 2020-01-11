@@ -21,12 +21,20 @@ body {
 /* Header */
 
 header {
+    align-items: center;
     background: #aaa;
     background-image: url(img/city.jpg);
     background-position: bottom;
     background-size: 100%;
     background-repeat: no-repeat;
+    color: rgb(221, 221, 221);
+    display: flex;
+    font-family: fantasy, 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-style: italic;
     grid-area: head;
+    justify-content: center;
+    word-spacing: .8rem;
     z-index: 4;
 }
 
@@ -161,6 +169,32 @@ article p {
     line-height: .5rem; 
 }
 
+.wrapper-blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 4rem;
+}
+
+.wrapper-blog p {
+    padding: 0;
+}
+
+.item:nth-child(1) {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.item:nth-child(3) {
+    margin-bottom: 5vh;
+}
+
+.author-pic {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
 
 /* Footer */
 
@@ -172,6 +206,7 @@ footer {
     color: #fff;
     display: flex;
     flex-direction: column;
+    font-size: 0;
     grid-area: footer;
     height: 8rem;
     justify-content: center;
