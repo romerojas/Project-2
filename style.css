@@ -339,7 +339,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 20;
+    z-index: 5;
 }
 .loader {
     display: inline-block;
@@ -349,6 +349,7 @@ footer {
     border: 4px solid #Fff;
     top: 50%;
     animation: loader 2s infinite ease;
+    z-index: 6;
   }
   
   .loader-inner {
@@ -357,6 +358,7 @@ footer {
     width: 100%;
     background-color: #fff;
     animation: loader-inner 2s infinite ease-in;
+    z-index: 6;
   }
   
   @keyframes loader {
