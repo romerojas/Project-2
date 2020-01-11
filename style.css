@@ -21,6 +21,7 @@ body {
 /* Header */
 
 header {
+    animation: text 3s 1;
     align-items: center;
     background: #aaa;
     background-image: url(img/city.jpg);
@@ -30,14 +31,26 @@ header {
     color: rgb(221, 221, 221);
     display: flex;
     font-family: fantasy, 'Courier New', Courier, monospace;
-    font-size: 2rem;
+    font-size: 3rem;
     font-style: italic;
     grid-area: head;
     justify-content: center;
+    letter-spacing: 8px;
     word-spacing: .8rem;
     z-index: 4;
 }
 
+@keyframes text {
+    0% {
+        color: rgba(255, 255, 255, 0);
+    }
+    30% {
+        letter-spacing: 25px;
+    }
+    85% {
+        letter-spacing: 8px;
+    }
+}
 /* Nav */
 
 nav {
@@ -49,7 +62,7 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: rgb(112, 112, 112);
     text-decoration: none;
 }
 
@@ -63,13 +76,16 @@ nav ul {
 nav li {
     align-items: center;
     height: 2.5rem;
-    color: #fff;
     display: flex;
     padding: 1rem;
 }
 
 .nav-op:hover {
-    color: rgb(117, 117, 117);
+    color: rgb(255, 255, 255);
+}
+
+.current {
+    color: rgb(255, 255, 255);
 }
 
 
@@ -160,6 +176,32 @@ article p {
     line-height: 1.8rem;
     padding: 4rem 0;
     word-spacing: .2rem;
+}
+
+.article-contact {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.contact-info {
+    align-self: flex-start;
+    padding-top: 1rem;
+}
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 1rem;
+}
+
+.contact-link {
+    color: black;
+    text-decoration: none;
 }
 
 .first-letter {
@@ -265,6 +307,16 @@ footer {
     }
     .post-title {
         padding: 0 1rem;
+    }
+    .article-contact {
+        text-align: center;
+        display: block;
+    }
+    .contact-form iframe{
+        width: 330px;
+    }
+    .wrapper-blog {
+        display: block;
     }
 }
 
