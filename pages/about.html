@@ -10,9 +10,13 @@
     <link rel="icon" href="../img/tabicon.png">
     <script data-ad-client="ca-pub-1130271992288589" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <header>
         
     </header>
@@ -40,6 +44,9 @@
             <div class="item">
                 <p class="p-blog">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quidem. Explicabo similique quam dicta commodi soluta ex consequuntur quaerat corrupti dolorem culpa officiis corporis, animi eum praesentium quia dolores accusamus! Dolorum cum tempora pariatur optio nobis harum quia porro eaque autem quasi cupiditate id quis laborum, minima alias placeat atque.</p>
             </div>
+            <div class="item">
+                <img src="../img/about2.jpg" alt="" class="author-pic">
+            </div>
             </div>
         </article>
     </main>
@@ -57,7 +64,11 @@
             <p>Copyright &copy; 2019. All rights reserved. </p>
         </div>
     </footer>
-
+    <script>
+        $(window).on("load", function(){
+            $(".loader-wrapper").fadeOut("slow");
+        });
+     </script>
 </body>
 
 </html>

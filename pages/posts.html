@@ -10,9 +10,13 @@
     <link rel="icon" href="../img/tabicon.png">
     <script data-ad-client="ca-pub-1130271992288589" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <header>
         
     </header>
@@ -44,7 +48,11 @@
             <p>Copyright &copy; 2019. All rights reserved. </p>
         </div>
     </footer>
-
+    <script>
+        $(window).on("load", function(){
+            $(".loader-wrapper").fadeOut("slow");
+        });
+     </script>
 </body>
 
 </html>

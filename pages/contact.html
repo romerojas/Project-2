@@ -10,9 +10,13 @@
     <link rel="icon" href="../img/tabicon.png">
     <script data-ad-client="ca-pub-1130271992288589" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <header>
         
     </header>
@@ -35,7 +39,7 @@
                </ul>
             </div>
             <div class="contact-form">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSet4KjW6yoxGjkERE473kmgmMSz54UNh2FWK-5K89hPRf-D7A/viewform?embedded=true" width="380" height="677" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSet4KjW6yoxGjkERE473kmgmMSz54UNh2FWK-5K89hPRf-D7A/viewform?embedded=true" width="380" height="655" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
             
         </article>
@@ -54,7 +58,11 @@
             <p>Copyright &copy; 2019. All rights reserved. </p>
         </div>
     </footer>
-
+    <script>
+        $(window).on("load", function(){
+            $(".loader-wrapper").fadeOut("slow");
+        });
+     </script>
 </body>
 
 </html>

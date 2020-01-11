@@ -329,6 +329,7 @@ footer {
     }
 }
 
+/* Pre-loader */
 .loader-wrapper {
     width: 100%;
     height: 100%;
@@ -342,10 +343,10 @@ footer {
     z-index: 5;
 }
 .loader {
-    display: inline-block;
+    /* display: inline-block; */
     width: 30px;
     height: 30px;
-    position: relative;
+    /* position: relative; */
     border: 4px solid #Fff;
     top: 50%;
     animation: loader 2s infinite ease;
@@ -354,7 +355,7 @@ footer {
   
   .loader-inner {
     vertical-align: top;
-    display: inline-block;
+    /* display: inline-block; */
     width: 100%;
     background-color: #fff;
     animation: loader-inner 2s infinite ease-in;
@@ -403,4 +404,26 @@ footer {
     100% {
       height: 0%;
     }
+  }
+
+  /* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #353535; 
   }
