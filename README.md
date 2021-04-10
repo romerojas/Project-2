@@ -1,2 +1,2 @@
 # blog
-My Blog Website
+A simple blog website
